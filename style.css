@@ -1,3 +1,28 @@
+/*colours*/
+:root {
+    --c-white: hsl(0, 0%, 100%);
+    --c-grey-dark: hsl(233, 14%, 25%);
+    --c-purple: hsl(232, 58%, 55%); 
+    --c-teal: hsl(180, 100%, 42%);
+    --c-transparent: transparent;
+    --c-magenta: hsl(320, 85%, 41%);
+
+
+
+    --colour-main-bg: var(--c-white);
+    --colour-text-dark: var(--c-grey-dark);
+    --colour-text-white: var(--c-white);
+    --colour-hero-bg: var(--c-purple);
+    --colour-button-primary-bg: var(--c-teal);
+    --colour-button-primary-text: var(--c-grey-dark);
+    --colour-button-secondary-bg: var(--c-transparent)
+    --colour-button-secondary-border: var(--c-white);
+    --colour-button-secondary-text: var(--c-white);
+    --colour-fullwidth-bg: var(--c-magenta);
+
+}
+
+
 *, *::before, 
 *::after{
     box-sizing: border-box;
@@ -16,3 +41,9 @@ img, picture, svg{
     display: block;
 }
 
+.wrapper{
+
+    width: min(calc(100% - 48px),calc(1200/16 * 1rem));
+    margin-inline: auto;
+    
+}
